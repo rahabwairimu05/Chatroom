@@ -1,0 +1,12 @@
+{
+    "name": "FSEchat",
+    "version": "0.0.0",
+    "description": "FSE chatroom ",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "mysql":"^2.5.4",
+        "jade": "latest"
+    },
+    "author": "Rahab"
+}

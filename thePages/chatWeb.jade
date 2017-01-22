@@ -1,0 +1,24 @@
+doctype
+html
+	head
+	
+		title="FSE  chatroom"
+		script(src='/chatting.js')
+		script(src='/socket.io/socket.io.js')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		body(style='background-color:powderblue')
+				#raha1(style='width: 500px; margin: 0 auto;')
+					h1(style='color: blue;') FSE CHATROOM
+				#content(style='width: 500px; height: 300px; margin: 0 auto; border: solid 1px #999; overflow-y: scroll; font-family: sans-serif; padding: 5px;')
+				#raha2(style='width: 500px; height: 300px; margin: 0 auto;')
+					.controls
+						|	Name:
+						input#name(style='width:350px; height: 20px; padding:10px; color:blue; margin:20px')
+						input#JoinChat(type='button', value='JoinChat')
+						input#leaveChat(type='button', value='LeaveChat')
+						br
+						|	Message:
+						input#field(style='width:350px; height: 20px; padding:10px; margin:20px')
+						input#send(type='button', value='send')
